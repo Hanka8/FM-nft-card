@@ -1,0 +1,148 @@
+:root {
+  --mainBG: hsl(217, 54%, 11%);
+  --cardBG: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --cyan: hsl(178, 100%, 50%);
+  --blue: hsl(215, 51%, 70%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-family: 'Outfit', sans-serif;
+  color: var(--white);
+}
+
+body {
+  background-color: var(--mainBG);
+}
+
+/* ######### LAYOUT ########## */
+
+.card {
+  margin: 5% auto;
+  border-radius: 15px;
+  background-color: var(--cardBG);
+  width: 280px;
+  padding: 25px;
+  box-shadow: 25px 45px RGB(12, 23, 41), -25px 45px RGB(12, 23, 41),
+   55px 75px RGB(12, 24, 43), -55px 75px RGB(12, 24, 43), 55px -40px RGB(12, 24, 43), -55px -40px RGB(12, 24, 43);
+
+}
+
+
+.card-img {
+  width: 100%;
+  height: 280px;
+  display: block;
+  margin: 0 auto 8% auto;
+  border-radius: 8px;
+  z-index: -1;
+  background-image: url(images/image-equilibrium.jpg);
+  background-size: contain;
+}
+
+.card-img:hover {
+  background-image: url(images/image-equilibrium.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 2000px hsla(178, 100%, 50%, 0.5);
+  cursor: pointer;
+}
+
+.card-img:hover::after {
+  content: url(images/icon-view.svg);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.attributes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.days-text, .eth-text {
+  display: inline-block;
+}
+
+.avatar {
+  width: 10%;
+  border: 1px solid var(--white);
+  border-radius: 25px;
+}
+
+.creation {
+  display: flex;
+  align-items: center;
+  margin: 4% auto 2% auto;
+}
+
+/* ######## PADINGS and STYLES ######## */
+
+h1, p.definition, .attributes {
+  padding-bottom: 7%;
+  font-size: 20px;
+}
+
+h1:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+p.definition {
+  opacity: 0.8;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--blue);
+}
+
+.eth-text, .days-text {
+  font-size: 15px;
+  color: var(--cyan);
+  position: relative;
+  bottom: 3px;
+}
+
+.eth-text {
+  font-weight: 700;
+  left: 3px;
+}
+
+.days-text {
+  color: var(--blue);
+  opacity: 0.8;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--white);
+  opacity: 0.1;
+}
+
+.creation-text, .autor-text {
+  color: var(--blue);
+  opacity: 0.8;
+  font-size: 15px;
+  position: relative;
+  left: 5%;
+}
+
+.autor-text {
+  color: var(--white);
+}
+
+.autor-text:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+}

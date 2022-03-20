@@ -19,17 +19,16 @@ body {
   background-color: var(--mainBG);
 }
 
+
 /* ######### LAYOUT ########## */
 
 .card {
-  margin: 5% auto;
+  margin: 10% auto;
   border-radius: 15px;
   background-color: var(--cardBG);
   width: 280px;
   padding: 25px;
-  box-shadow: 25px 45px RGB(12, 23, 41), -25px 45px RGB(12, 23, 41),
-   55px 75px RGB(12, 24, 43), -55px 75px RGB(12, 24, 43), 55px -40px RGB(12, 24, 43), -55px -40px RGB(12, 24, 43);
-
+  filter: drop-shadow(0 0 25px RGB(12, 20, 30));
 }
 
 
